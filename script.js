@@ -14,3 +14,16 @@ function getComputerChoice() {
       return 'scissors';
   }
 }
+
+// Get input choice from user
+function getHumanChoice() {
+    let choice = prompt("Enter rock, paper, or scissors: ")
+
+    // WHILE that validates user input
+    while (choice !== 'rock' && choice !== 'paper' && choice !== 'scissors' && choice !== null) {
+        console.log('Invalid choice. Please enter either "rock", "paper", or "scissors".')
+        choice = prompt("Enter rock, paper, or scissors: ")
+    }
+    return choice
+}
+
